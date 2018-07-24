@@ -58,6 +58,8 @@ class AllProductTableViewController: UITableViewController {
         cell.priceLabel.text = String(allProducts[indexPath.row].price.value)
         cell.priceLabel.text = "Price: \(allProducts[indexPath.row].price.value)"
         cell.dateLabel.text = allProducts[indexPath.row].getDate(allProducts[indexPath.row].releaseDate)
+        cell.ratingView.enable = true
+        cell.ratingView.starNumber = 2
         return cell
     }
     

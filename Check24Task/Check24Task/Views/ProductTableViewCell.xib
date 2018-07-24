@@ -58,6 +58,12 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vk-as-9kG" customClass="RatingBar">
+                        <rect key="frame" x="226" y="160" width="147" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="R8M-ld-Hfv"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="UFE-YW-bCf" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="41g-Q3-nwg"/>
@@ -66,10 +72,13 @@
                     <constraint firstItem="UFE-YW-bCf" firstAttribute="leading" secondItem="5It-fi-dha" secondAttribute="trailing" constant="87" id="FkX-Eq-EYE"/>
                     <constraint firstItem="wKM-1Y-r6u" firstAttribute="leading" secondItem="TSN-dU-0OK" secondAttribute="trailing" constant="15" id="Gph-1w-RbW"/>
                     <constraint firstItem="TSN-dU-0OK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="Jlb-yf-IqO"/>
+                    <constraint firstItem="2vk-as-9kG" firstAttribute="leading" secondItem="Y0R-Gw-0i9" secondAttribute="trailing" constant="89" id="VWD-EY-0aI"/>
                     <constraint firstItem="5It-fi-dha" firstAttribute="leading" secondItem="TSN-dU-0OK" secondAttribute="trailing" constant="15" id="Wg7-iV-Uxq"/>
                     <constraint firstItem="wKM-1Y-r6u" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="e9N-hl-w0Z"/>
                     <constraint firstItem="wKM-1Y-r6u" firstAttribute="top" secondItem="5It-fi-dha" secondAttribute="bottom" constant="8" id="fVF-wz-JhW"/>
+                    <constraint firstItem="2vk-as-9kG" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="lho-1t-2KX"/>
                     <constraint firstItem="Y0R-Gw-0i9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="78" id="mI5-pm-qUe"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2vk-as-9kG" secondAttribute="bottom" constant="4" id="qEZ-m4-VVE"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Y0R-Gw-0i9" secondAttribute="bottom" constant="6" id="t6r-gB-3mE"/>
                     <constraint firstItem="TSN-dU-0OK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="vMG-9m-wvM"/>
                 </constraints>
@@ -81,6 +90,7 @@
                 <outlet property="productDesriptionLabel" destination="wKM-1Y-r6u" id="9Dd-dD-QPm"/>
                 <outlet property="productImageView" destination="TSN-dU-0OK" id="pTN-u5-74r"/>
                 <outlet property="productNameLabel" destination="5It-fi-dha" id="9XL-97-bJD"/>
+                <outlet property="ratingView" destination="2vk-as-9kG" id="Pob-l8-LWb"/>
             </connections>
             <point key="canvasLocation" x="-135.5" y="-244.5"/>
         </tableViewCell>

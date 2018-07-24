@@ -25,7 +25,7 @@ class ProductDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
         productName.text = product?.name
         let price = product?.price.value
-        productPrice.text = String(describing: price!)
+        productPrice.text = "Price: \(price!)"
         shortDescription.text = product?.shortDescription
         productDate.text = product?.getDate((product?.releaseDate)!)
         longDescription.text = product?.longDescription

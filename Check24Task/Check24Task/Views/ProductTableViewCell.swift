@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import RatingBar
 
 class ProductTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var ratingView: RatingBar!
     @IBOutlet weak var productImageView: UIImageView!
     
     @IBOutlet weak var productNameLabel: UILabel!

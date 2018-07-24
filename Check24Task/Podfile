@@ -9,6 +9,9 @@ target 'Check24Task' do
   pod 'Alamofire', '~> 4.3.0'
   pod 'SwiftTask', :git => 'https://github.com/Cultivr/SwiftTask.git', :branch => 'swift/4.0'
   pod 'SwiftyJSON', '~> 3.1.4'
+  pod 'RatingBar', '~>0.0.1'
+
+
   target 'Check24TaskTests' do
     inherit! :search_paths
     # Pods for testing

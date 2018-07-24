@@ -1,16 +1,19 @@
 PODS:
   - Alamofire (4.3.0)
+  - RatingBar (0.0.2)
   - SwiftTask (5.0.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3.0)
+  - RatingBar (~> 0.0.1)
   - SwiftTask (from `https://github.com/Cultivr/SwiftTask.git`, branch `swift/4.0`)
   - SwiftyJSON (~> 3.1.4)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - RatingBar
     - SwiftyJSON
 
 EXTERNAL SOURCES:
@@ -25,9 +28,10 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  RatingBar: de58108078acfd63ccc2853d9a7efbfef42b521e
   SwiftTask: 7fcd92f8ac16876e82c0e4ced0cea7e028456b6b
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: f095b99f682b2d63ee194e78e4465266b3795f6e
+PODFILE CHECKSUM: bc850ea51700b336d086a73134906bfc8866b1e8
 
 COCOAPODS: 1.5.0
