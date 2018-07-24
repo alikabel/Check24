@@ -40,14 +40,20 @@ class AllProductTableViewController: UITableViewController {
         return 1
     }
 
+   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return allProducts.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! ProductTableViewCell
 
+        cell.productNameLabel.text = allProducts[indexPath.row].name
+        cell.productDesriptionLabel.text = allProducts[indexPath.row].shortDescription
+        cell.priceLabel.text = String(allProducts[indexPath.row].price.value)
         return cell
     }
 
@@ -55,6 +61,7 @@ class AllProductTableViewController: UITableViewController {
     func getAllProducts() {
         ProdutctsAPI.getProducts().success{ productsResult in
             self.allProducts = productsResult.products
+            self.tableView.reloadData()
         }
         
     }
