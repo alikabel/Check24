@@ -25,6 +25,7 @@ class ProductDetailsViewController: UIViewController {
         let price = product?.price.value
         productPrice.text = String(describing: price!)
         shortDescription.text = product?.shortDescription
+        
 //        longDescription.text = product.
     }
 

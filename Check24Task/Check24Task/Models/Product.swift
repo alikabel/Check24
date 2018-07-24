@@ -15,17 +15,35 @@ class Product: NSObject, JSONMappable {
     let shortDescription: String
     let price: Price
     let rating: Float
+    let longDescription: String
+    let releaseDate: Double
+    let available: Bool
     
     init(
         name: String,
         shortDescription: String,
         price: Price,
-        rating: Float
+        rating: Float,
+        longDescription: String,
+        releaseDate: Double,
+        available: Bool
     ) {
         self.name = name
         self.shortDescription = shortDescription
         self.price = price
         self.rating = rating
+        self.longDescription = longDescription
+        self.releaseDate = releaseDate
+        self.available = available
+        
+    }
+    // MARK:- Methods
+    func getDate(_ timeStamp: Double) -> String{
+        let date = Date(timeIntervalSince1970: timeStamp)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = DateFormatter.Style.medium
+        let localDate = dateFormatter.string(from: date)
+        return localDate
     }
     
     // MARK: - JSONMappable
@@ -35,8 +53,14 @@ class Product: NSObject, JSONMappable {
             name: json["name"].stringValue,
             shortDescription: json["description"].stringValue,
             price: Price.mapJSON(json["price"]),
-            rating: json["rating"].floatValue
+            rating: json["rating"].floatValue,
+            longDescription: json["longDescription"].stringValue,
+            releaseDate: json["releaseDate"].doubleValue,
+            available: json["available"].boolValue
+            
             
         )
     }
+    
+    
 }
