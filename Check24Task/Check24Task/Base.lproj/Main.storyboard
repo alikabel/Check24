@@ -41,16 +41,16 @@
             </objects>
             <point key="canvasLocation" x="1519.2" y="193.85307346326837"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Available Table View Controller-->
         <scene sceneID="f7J-C6-obc">
             <objects>
-                <tableViewController id="b4e-C4-vyo" sceneMemberID="viewController">
+                <tableViewController id="b4e-C4-vyo" customClass="AvailableTableViewController" customModule="Check24Task" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VvS-YF-0uQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="F7i-is-h8Y">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="F7i-is-h8Y" customClass="ProductTableViewCell" customModule="Check24Task" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F7i-is-h8Y" id="mvR-57-P8h">

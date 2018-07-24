@@ -27,6 +27,7 @@
 		1F90038921074F2C00799736 /* NonAvailableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90038721074F2C00799736 /* NonAvailableTableViewCell.swift */; };
 		1F90038A21074F2C00799736 /* NonAvailableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F90038821074F2C00799736 /* NonAvailableTableViewCell.xib */; };
 		1F90038C210750D400799736 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90038B210750D400799736 /* ProductDetailsViewController.swift */; };
+		1F90038E2107614400799736 /* AvailableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90038D2107614400799736 /* AvailableTableViewController.swift */; };
 		524B67916F8562BAFD9C9F5C /* Pods_Check24TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03609FAE63C158D0AF6C9303 /* Pods_Check24TaskTests.framework */; };
 		CDC54707C818549D37C9AE43 /* Pods_Check24Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D151753543094231C62AFE09 /* Pods_Check24Task.framework */; };
 		F44CCA7F0C2A22806C12718F /* Pods_Check24TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5BB88B889DC869F8FE7794 /* Pods_Check24TaskUITests.framework */; };
@@ -78,6 +79,7 @@
 		1F90038721074F2C00799736 /* NonAvailableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonAvailableTableViewCell.swift; sourceTree = "<group>"; };
 		1F90038821074F2C00799736 /* NonAvailableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NonAvailableTableViewCell.xib; sourceTree = "<group>"; };
 		1F90038B210750D400799736 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		1F90038D2107614400799736 /* AvailableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableTableViewController.swift; sourceTree = "<group>"; };
 		6C5BB88B889DC869F8FE7794 /* Pods_Check24TaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Check24TaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52000107FEBF6374BBAA940 /* Pods-Check24TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Check24TaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Check24TaskUITests/Pods-Check24TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B7036AE628062FE7E9416CA8 /* Pods-Check24Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Check24Task.release.xcconfig"; path = "Pods/Target Support Files/Pods-Check24Task/Pods-Check24Task.release.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				1F90038121072E7100799736 /* AllProductTableViewController.swift */,
 				1F90038B210750D400799736 /* ProductDetailsViewController.swift */,
+				1F90038D2107614400799736 /* AvailableTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				1F90033A2107153500799736 /* AppDelegate.swift in Sources */,
 				1F90036F2107156100799736 /* JSONMappable.swift in Sources */,
 				1F90038921074F2C00799736 /* NonAvailableTableViewCell.swift in Sources */,
+				1F90038E2107614400799736 /* AvailableTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
