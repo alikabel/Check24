@@ -22,6 +22,8 @@
 		1F90037421071C2D00799736 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90037321071C2D00799736 /* Product.swift */; };
 		1F90037621071C3A00799736 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90037521071C3A00799736 /* Price.swift */; };
 		1F9003782107288F00799736 /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9003772107288F00799736 /* JSONParsing.swift */; };
+		1F90037E21072B8E00799736 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90037C21072B8E00799736 /* ProductTableViewCell.swift */; };
+		1F90037F21072B8E00799736 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F90037D21072B8E00799736 /* ProductTableViewCell.xib */; };
 		524B67916F8562BAFD9C9F5C /* Pods_Check24TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03609FAE63C158D0AF6C9303 /* Pods_Check24TaskTests.framework */; };
 		CDC54707C818549D37C9AE43 /* Pods_Check24Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D151753543094231C62AFE09 /* Pods_Check24Task.framework */; };
 		F44CCA7F0C2A22806C12718F /* Pods_Check24TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5BB88B889DC869F8FE7794 /* Pods_Check24TaskUITests.framework */; };
@@ -68,6 +70,8 @@
 		1F90037321071C2D00799736 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		1F90037521071C3A00799736 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		1F9003772107288F00799736 /* JSONParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
+		1F90037C21072B8E00799736 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		1F90037D21072B8E00799736 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		6C5BB88B889DC869F8FE7794 /* Pods_Check24TaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Check24TaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52000107FEBF6374BBAA940 /* Pods-Check24TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Check24TaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Check24TaskUITests/Pods-Check24TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B7036AE628062FE7E9416CA8 /* Pods-Check24Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Check24Task.release.xcconfig"; path = "Pods/Target Support Files/Pods-Check24Task/Pods-Check24Task.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 		1F9003382107153500799736 /* Check24Task */ = {
 			isa = PBXGroup;
 			children = (
+				1F90037921072B4800799736 /* Views */,
 				1F90037021071A3400799736 /* Models */,
 				1F9003672107156100799736 /* API */,
 				1F9003392107153500799736 /* AppDelegate.swift */,
@@ -180,6 +185,15 @@
 				1F9003772107288F00799736 /* JSONParsing.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1F90037921072B4800799736 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F90037C21072B8E00799736 /* ProductTableViewCell.swift */,
+				1F90037D21072B8E00799736 /* ProductTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		397FE21506E6BB478724DCE3 /* Frameworks */ = {
@@ -317,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F9003442107153500799736 /* LaunchScreen.storyboard in Resources */,
+				1F90037F21072B8E00799736 /* ProductTableViewCell.xib in Resources */,
 				1F9003412107153500799736 /* Assets.xcassets in Resources */,
 				1F90033F2107153500799736 /* Main.storyboard in Resources */,
 			);
@@ -429,6 +444,7 @@
 				1F90037221071B1700799736 /* ProdutctsAPI.swift in Sources */,
 				1F90037621071C3A00799736 /* Price.swift in Sources */,
 				1F9003782107288F00799736 /* JSONParsing.swift in Sources */,
+				1F90037E21072B8E00799736 /* ProductTableViewCell.swift in Sources */,
 				1F90033C2107153500799736 /* ViewController.swift in Sources */,
 				1F90033A2107153500799736 /* AppDelegate.swift in Sources */,
 				1F90036F2107156100799736 /* JSONMappable.swift in Sources */,
