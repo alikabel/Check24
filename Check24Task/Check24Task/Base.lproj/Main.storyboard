@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Alle-->
+        <!--Vorgemerkt-->
         <scene sceneID="dc4-Fe-c4T">
             <objects>
                 <tableViewController id="lx8-YW-bpB" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="lx8-YW-bpB" id="EyK-Wt-T7K"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Alle" id="u21-Fo-CE3"/>
+                    <tabBarItem key="tabBarItem" title="Vorgemerkt" id="u21-Fo-CE3"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bla-CJ-fb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +67,7 @@
             </objects>
             <point key="canvasLocation" x="1976.8" y="172.26386806596702"/>
         </scene>
-        <!--Vorgemerkt-->
+        <!--Alle-->
         <scene sceneID="GcA-qJ-pOd">
             <objects>
                 <tableViewController id="sHo-Ck-dBn" sceneMemberID="viewController">
@@ -90,7 +90,7 @@
                             <outlet property="delegate" destination="sHo-Ck-dBn" id="vkz-yI-fOi"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Vorgemerkt" id="Daf-ks-7Rt"/>
+                    <tabBarItem key="tabBarItem" title="Alle" id="Daf-ks-7Rt"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWt-uM-CKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,9 +106,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="sHo-Ck-dBn" kind="relationship" relationship="viewControllers" id="anX-5h-9gM"/>
                         <segue destination="b4e-C4-vyo" kind="relationship" relationship="viewControllers" id="6it-Rm-10m"/>
                         <segue destination="lx8-YW-bpB" kind="relationship" relationship="viewControllers" id="8sl-K9-FGK"/>
-                        <segue destination="sHo-Ck-dBn" kind="relationship" relationship="viewControllers" id="anX-5h-9gM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFO-N4-UOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
