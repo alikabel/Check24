@@ -16,11 +16,16 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
     
-    let product: Product? = nil
+    var product: Product? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        productName.text = product?.name
+        let price = product?.price.value
+        productPrice.text = String(describing: price!)
+        shortDescription.text = product?.shortDescription
+//        longDescription.text = product.
     }
 
     override func didReceiveMemoryWarning() {
