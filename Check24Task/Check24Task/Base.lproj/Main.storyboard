@@ -124,6 +124,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rL5-sD-0CF">
+                                <rect key="frame" x="164" y="143" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qBW-GF-opf">
                                 <rect key="frame" x="24" y="217" width="327" height="119"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -148,8 +154,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rL5-sD-0CF">
-                                <rect key="frame" x="164" y="143" width="187" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpV-4d-ULf">
+                                <rect key="frame" x="247" y="188" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -160,6 +166,7 @@
                             <constraint firstItem="mlU-9R-qKY" firstAttribute="bottom" secondItem="biM-Lr-oFb" secondAttribute="bottom" constant="20" id="0sS-Wi-eYx"/>
                             <constraint firstItem="biM-Lr-oFb" firstAttribute="trailing" secondItem="aRS-y4-gxP" secondAttribute="trailingMargin" id="44c-W4-8sj"/>
                             <constraint firstItem="rL5-sD-0CF" firstAttribute="leading" secondItem="h26-um-fet" secondAttribute="leading" id="ATy-YR-CCz"/>
+                            <constraint firstItem="gpV-4d-ULf" firstAttribute="top" secondItem="rL5-sD-0CF" secondAttribute="bottom" constant="24" id="Cm6-VX-iHl"/>
                             <constraint firstItem="qBW-GF-opf" firstAttribute="centerX" secondItem="aRS-y4-gxP" secondAttribute="centerX" id="EqS-Yu-KkE"/>
                             <constraint firstItem="qBW-GF-opf" firstAttribute="top" secondItem="rL5-sD-0CF" secondAttribute="bottom" constant="53" id="G3L-Lf-9se"/>
                             <constraint firstItem="rL5-sD-0CF" firstAttribute="top" secondItem="h26-um-fet" secondAttribute="bottom" constant="40" id="LGm-4R-dex"/>
@@ -169,6 +176,8 @@
                             <constraint firstItem="qBW-GF-opf" firstAttribute="trailing" secondItem="rL5-sD-0CF" secondAttribute="trailing" id="TDn-TO-8Ns"/>
                             <constraint firstItem="RfG-h5-WMZ" firstAttribute="top" secondItem="mlU-9R-qKY" secondAttribute="top" id="UL6-Vf-pFC"/>
                             <constraint firstItem="qBW-GF-opf" firstAttribute="leading" secondItem="mlU-9R-qKY" secondAttribute="leading" constant="24" id="WM5-NE-mvO"/>
+                            <constraint firstItem="gpV-4d-ULf" firstAttribute="leading" secondItem="RfG-h5-WMZ" secondAttribute="trailing" constant="110" id="Zzc-na-0Aa"/>
+                            <constraint firstItem="mlU-9R-qKY" firstAttribute="trailing" secondItem="gpV-4d-ULf" secondAttribute="trailing" constant="16" id="dSh-B0-2ce"/>
                             <constraint firstItem="O8I-zY-nJs" firstAttribute="top" secondItem="qBW-GF-opf" secondAttribute="bottom" constant="28" id="dUi-rb-cRR"/>
                             <constraint firstItem="RfG-h5-WMZ" firstAttribute="leading" secondItem="mlU-9R-qKY" secondAttribute="leading" constant="16" id="f7s-Cp-h7J"/>
                             <constraint firstItem="h26-um-fet" firstAttribute="leading" secondItem="RfG-h5-WMZ" secondAttribute="trailing" constant="27" id="iwc-uu-0Nv"/>
@@ -180,6 +189,7 @@
                     </view>
                     <connections>
                         <outlet property="longDescription" destination="biM-Lr-oFb" id="jww-Io-KfD"/>
+                        <outlet property="productDate" destination="gpV-4d-ULf" id="aIn-4c-KKj"/>
                         <outlet property="productImageView" destination="RfG-h5-WMZ" id="P62-KG-LWu"/>
                         <outlet property="productName" destination="h26-um-fet" id="VdU-wS-rmi"/>
                         <outlet property="productPrice" destination="rL5-sD-0CF" id="WEw-fF-Zeg"/>

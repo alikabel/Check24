@@ -55,6 +55,7 @@ class AllProductTableViewController: UITableViewController {
         cell.productNameLabel.text = allProducts[indexPath.row].name
         cell.productDesriptionLabel.text = allProducts[indexPath.row].shortDescription
         cell.priceLabel.text = String(allProducts[indexPath.row].price.value)
+        cell.priceLabel.text = "Price: \(allProducts[indexPath.row].price.value)"
         cell.dateLabel.text = allProducts[indexPath.row].getDate(allProducts[indexPath.row].releaseDate)
         return cell
     }

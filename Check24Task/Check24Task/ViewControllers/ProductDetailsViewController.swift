@@ -10,6 +10,7 @@ import UIKit
 
 class ProductDetailsViewController: UIViewController {
 
+    @IBOutlet weak var productDate: UILabel!
     @IBOutlet weak var longDescription: UITextView!
     @IBOutlet weak var shortDescription: UITextView!
     @IBOutlet weak var productPrice: UILabel!
@@ -25,7 +26,7 @@ class ProductDetailsViewController: UIViewController {
         let price = product?.price.value
         productPrice.text = String(describing: price!)
         shortDescription.text = product?.shortDescription
-        
+        productDate.text = product?.getDate((product?.releaseDate)!)
 //        longDescription.text = product.
     }
 
