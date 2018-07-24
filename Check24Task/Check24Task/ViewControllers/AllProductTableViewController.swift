@@ -57,6 +57,11 @@ class AllProductTableViewController: UITableViewController {
         cell.priceLabel.text = String(allProducts[indexPath.row].price.value)
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        performSegue(withIdentifier: "details", sender: self)
+    }
 
     // MARK:- Product API
     @objc func getAllProducts() {
