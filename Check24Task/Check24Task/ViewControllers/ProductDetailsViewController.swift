@@ -27,7 +27,7 @@ class ProductDetailsViewController: UIViewController {
         productPrice.text = String(describing: price!)
         shortDescription.text = product?.shortDescription
         productDate.text = product?.getDate((product?.releaseDate)!)
-//        longDescription.text = product.
+        longDescription.text = product?.longDescription
     }
 
     override func didReceiveMemoryWarning() {
