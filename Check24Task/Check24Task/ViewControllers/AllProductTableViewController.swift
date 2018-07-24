@@ -24,6 +24,7 @@ class AllProductTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        addRefereshController()
         registerCell()
         getAllProducts()
     }
@@ -58,10 +59,11 @@ class AllProductTableViewController: UITableViewController {
     }
 
     // MARK:- Product API
-    func getAllProducts() {
+    @objc func getAllProducts() {
         ProdutctsAPI.getProducts().success{ productsResult in
             self.allProducts = productsResult.products
             self.tableView.reloadData()
+            self.refreshControl?.endRefreshing()
         }
         
     }
@@ -70,6 +72,12 @@ class AllProductTableViewController: UITableViewController {
     func registerCell() {
         let productCell = UINib(nibName: "ProductTableViewCell", bundle: nil)
         tableView.register(productCell, forCellReuseIdentifier: reuseIdentifier)
+    }
+    
+    func addRefereshController() {
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(getAllProducts), for: .valueChanged)
+        refreshControl?.beginRefreshing()
     }
     /*
     // Override to support conditional editing of the table view.
