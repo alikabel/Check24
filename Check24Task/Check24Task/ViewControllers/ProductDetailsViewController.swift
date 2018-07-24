@@ -15,6 +15,8 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var productPrice: UILabel!
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
+    
+    let product: Product? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
 

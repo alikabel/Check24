@@ -62,7 +62,11 @@ class AllProductTableViewController: UITableViewController {
     {
         performSegue(withIdentifier: "details", sender: self)
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "details" {
+            
+        }
+    }
     // MARK:- Product API
     @objc func getAllProducts() {
         ProdutctsAPI.getProducts().success{ productsResult in
