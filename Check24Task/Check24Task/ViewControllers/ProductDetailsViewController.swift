@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class ProductDetailsViewController: UIViewController {
 
@@ -36,6 +37,10 @@ class ProductDetailsViewController: UIViewController {
     }
     
 
+    @IBAction func openWebView(_ sender: Any) {
+        let safariController = SFSafariViewController(url: URL(string: "http://m.check24.de/rechtliche-hinweise?deviceoutput=app")!)
+        present(safariController, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
